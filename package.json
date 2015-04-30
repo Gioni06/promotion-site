@@ -1,6 +1,7 @@
 {
   "name": "promotion-site",
   "description": "A Simple Promotion Site",
+  "version": "0.0.1",
   "dependencies": {
     "autoprefixer-stylus": "0.5.x",
     "axis": "0.3.x",
