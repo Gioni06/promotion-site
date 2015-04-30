@@ -1,0 +1,56 @@
+
+extends layout
+
+block content
+  div.container.wrapper
+    .row
+      .col-xs-12
+        section.hero.feature
+          h1.text-center Code
+          p.text-center.lead Der neue Share Button ist von grund auf neu programmiert und für die Zukunft gerüstet
+          p.text-center
+            a.lead(href="/") Zurück zur Übersicht
+          br
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
+        section.features
+          .row.feature
+            div.col-xs-12.col-md-6
+              br
+              code(style="font-size: 12px")
+                new Share('.share-button-special', special);
+               
+            .col-xs-12.col-md-6
+              h4 Plug & Play
+              p Der Button ist komplett in Javascript geschrieben und lässt sich einfach als Plugin in die Seite integrieren.                
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
+        section.features
+          .row.feature
+            div.col-xs-12.col-md-6
+              br
+              code(style="font-size: 12px")
+                |options: {
+                |   	networks: {
+                |      facebook: {
+                |           enabled: false
+                |         }
+                |     } 
+                |}
+              br
+              br
+              code(style="font-size: 12px")
+                 &#x3C;div class=&#x22;share-button&#x22; data-url=&#x22;http://www.bebe.de&#x22;&#x3E;&#x3C;/div&#x3E;
+               
+            .col-xs-12.col-md-6
+              h4 Flexibel
+              p Mit sinnvollen "Defaults" und der Option Für jeden Button individuelle Konfigurationen zu implementieren kann der Button sich an die Anforderungen anpassen.
+              p Optionen können auch Serverseitig via "data" Attributen übergeben werden
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
+        section.features
+          .row.feature
+            .col-xs-12.col-md-12
+              h4 Erweiterbar
+              p Kommende Features von neuen und bereits bekannten Netzwerken können integriet werden und nach einen Update für bereits bestehende Buttons genutzt werden.
+              p Selbst wenn zum Zeitpunk als der Content erstellt wurde, das neue Feature noch nicht bekannt war.           
