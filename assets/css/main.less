@@ -33,8 +33,14 @@ body{
   border-left: 1px solid #FCDDE4;
   border-right: 1px solid #FCDDE4;
   min-height: 100vh;
+  padding: 100px 30px;
   @media screen and (max-width: @screen-xs-max){
     width: 100%;
+  }
+  .feature{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #FCDDE4;
   }
 }
 hr{
@@ -42,7 +48,18 @@ hr{
   border-bottom: 1px solid #FCDDE4;
 }
 
-.share-button {
+.list-icon{
+  font-size: 10px!important;
+  color: #E95986;
+  line-height: 2em!important;
+  vertical-align: text-top;
+  margin-right: 10px;
+  height: 100%;
+  display: block;
+  
+}
+
+.share-button, .share-button-special {
   min-width: 100%;
   line-height: 1.1em;
   z-index: 100; 
@@ -55,5 +72,4 @@ hr{
   margin-top: -90px!important;
   @media screen and (max-width: @screen-xs-max){
   }
-  
 }  
