@@ -1,0 +1,22 @@
+{
+  "name": "promotion-site",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Gioni06/promotion-site",
+  "authors": [
+    "Jonas Duri <jd@oygo.com>"
+  ],
+  "description": "A Simple Promotion Site",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
