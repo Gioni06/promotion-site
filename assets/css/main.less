@@ -1,0 +1,59 @@
+@font-family-sans-serif : 'Open Sans', sans-serif;
+// Core variables and mixins
+@import "_variables.less";
+@import "./components/bootstrap/less/mixins.less";
+
+// Reset and dependencies
+@import "./components/bootstrap/less/normalize.less";
+@import "./components/bootstrap/less/print.less";
+@import "./components/bootstrap/less/glyphicons.less";
+
+// Core CSS
+@import "./components/bootstrap/less/scaffolding.less";
+@import "./components/bootstrap/less/type.less";
+@import "./components/bootstrap/less/code.less";
+@import "./components/bootstrap/less/grid.less";
+@import "./components/bootstrap/less/tables.less";
+@import "./components/bootstrap/less/forms.less";
+
+@import "./components/bootstrap/less/pager.less";
+@import "./components/bootstrap/less/jumbotron.less";
+@import "./components/bootstrap/less/media.less";
+@import "./components/bootstrap/less/utilities.less";
+@import "./components/bootstrap/less/responsive-utilities.less";
+
+
+body{
+  background-color: #fff2f5;
+  color: #E95986;
+}
+
+.wrapper{
+  background-color: white;
+  border-left: 1px solid #FCDDE4;
+  border-right: 1px solid #FCDDE4;
+  min-height: 100vh;
+  @media screen and (max-width: @screen-xs-max){
+    width: 100%;
+  }
+}
+hr{
+  border: 0;
+  border-bottom: 1px solid #FCDDE4;
+}
+
+.share-button {
+  min-width: 100%;
+  line-height: 1.1em;
+  z-index: 100; 
+  margin-top: 10px;
+  }
+  
+.social.top {
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  margin-top: -90px!important;
+  @media screen and (max-width: @screen-xs-max){
+  }
+  
+}  

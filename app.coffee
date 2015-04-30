@@ -1,15 +1,14 @@
 axis         = require 'axis'
 rupture      = require 'rupture'
-autoprefixer = require 'autoprefixer-stylus'
 less         = require 'less'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf', '**/components/**/*']
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee'),
+    js_pipeline(files: ['assets/js/share.min.js','assets/js/*.coffee']),
     css_pipeline(files: 'assets/css/*.less')
   ]
 

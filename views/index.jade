@@ -1,9 +1,25 @@
 extends layout
 
 block content
-  div.container
+  div.container.wrapper
     .row
       .col-xs-12
+        section.hero
+          h1.text-center Der neue Share Button
+          p.text-center.lead Lorem Ipsum Dolor Sit Amet
+          br
+          hr
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2
         section
-          h3.text-center Der neue Share Button
+          h3 Features
+          br
+          .row
+            div.col-xs-12.col-md-6
+              img.img.img-responsive(src="img/feature.png")      
+            .col-xs-12.col-md-6
+              h4 Kleiner Button, viele Möglichkeiten
+              p Der neue Share Button ist klein und lenkt nicht vom Content ab
+              p
+                div.share-button
           
